@@ -1,7 +1,7 @@
 
 import requests
 
-url = "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/lv.wikipedia/all-access/2024/11/01"
+url = "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/lv.wikipedia/all-access/2025/12/04"
 
 headers = {
     "User-Agent": "Vikipedijas-Pulss-ZPD (karlis.kirsakmens@edu.tukums.lv)"
@@ -23,3 +23,4 @@ if response.status_code == 200:
         print(article["article"], "-", article["views"], "skatījumi")
 else:
     print("Kļūda: API nav pieejams (statusa kods:", response.status_code, ")")
+
